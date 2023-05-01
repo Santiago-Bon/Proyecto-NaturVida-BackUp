@@ -72,11 +72,23 @@ namespace CapaPresentacion
         }
 
 
-        private void Btn_MInventario_Mostrar_Todo_Click(object sender, EventArgs e)
+        private void Btn_MInventario_Mostrar_Todo_Click(object sender, EventArgs e) //Vacia el origen de los datos del datagridview
         {
             MostrarInventarioMostrarTodo();
             BtnExportarExcel.Enabled = true;
             BtnExportarPdf.Enabled = true;
+        }
+
+
+        //Cerrar
+
+
+        private void BtnCerrar_Click(object sender, EventArgs e)
+        {
+            DataTable tabla = new DataTable();
+            Dgv_Inventario.DataSource = tabla;
+            BtnExportarExcel.Enabled = false;
+            BtnExportarPdf.Enabled = false;
         }
 
 

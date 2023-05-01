@@ -75,6 +75,7 @@
             this.dataGridView11 = new System.Windows.Forms.DataGridView();
             this.label13 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.BtnCerrar = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.Tpgingresar_Clientes.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -96,20 +97,22 @@
             this.tabControl1.Controls.Add(this.TpgmodificarCliente);
             this.tabControl1.Controls.Add(this.TpgeliminarCliente);
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(177, 38);
+            this.tabControl1.Location = new System.Drawing.Point(236, 47);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(446, 379);
+            this.tabControl1.Size = new System.Drawing.Size(595, 466);
             this.tabControl1.TabIndex = 9;
             // 
             // Tpgingresar_Clientes
             // 
             this.Tpgingresar_Clientes.Controls.Add(this.groupBox1);
             this.Tpgingresar_Clientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tpgingresar_Clientes.Location = new System.Drawing.Point(4, 22);
+            this.Tpgingresar_Clientes.Location = new System.Drawing.Point(4, 25);
+            this.Tpgingresar_Clientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Tpgingresar_Clientes.Name = "Tpgingresar_Clientes";
-            this.Tpgingresar_Clientes.Padding = new System.Windows.Forms.Padding(3);
-            this.Tpgingresar_Clientes.Size = new System.Drawing.Size(438, 353);
+            this.Tpgingresar_Clientes.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Tpgingresar_Clientes.Size = new System.Drawing.Size(587, 437);
             this.Tpgingresar_Clientes.TabIndex = 0;
             this.Tpgingresar_Clientes.Text = "Ingresar Cliente";
             this.Tpgingresar_Clientes.UseVisualStyleBackColor = true;
@@ -128,29 +131,31 @@
             this.groupBox1.Controls.Add(this.Txtingresar_Cliente_documento);
             this.groupBox1.Controls.Add(this.Btningresar_Cliente_limpiar);
             this.groupBox1.Controls.Add(this.Txtingresar_cliente_nombre);
-            this.groupBox1.Location = new System.Drawing.Point(28, 30);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Location = new System.Drawing.Point(37, 37);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(387, 277);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(516, 341);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             // 
             // Txtingresar_Cliente_correo
             // 
-            this.Txtingresar_Cliente_correo.Location = new System.Drawing.Point(123, 232);
+            this.Txtingresar_Cliente_correo.Location = new System.Drawing.Point(164, 286);
+            this.Txtingresar_Cliente_correo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Txtingresar_Cliente_correo.Name = "Txtingresar_Cliente_correo";
             this.Txtingresar_Cliente_correo.ShortcutsEnabled = false;
-            this.Txtingresar_Cliente_correo.Size = new System.Drawing.Size(100, 19);
+            this.Txtingresar_Cliente_correo.Size = new System.Drawing.Size(132, 22);
             this.Txtingresar_Cliente_correo.TabIndex = 12;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(21, 176);
+            this.label4.Location = new System.Drawing.Point(28, 217);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(57, 13);
+            this.label4.Size = new System.Drawing.Size(69, 16);
             this.label4.TabIndex = 5;
             this.label4.Text = "Teléfono";
             // 
@@ -158,9 +163,10 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(24, 232);
+            this.label10.Location = new System.Drawing.Point(32, 286);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(44, 13);
+            this.label10.Size = new System.Drawing.Size(54, 16);
             this.label10.TabIndex = 11;
             this.label10.Text = "Correo";
             // 
@@ -168,19 +174,21 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(21, 123);
+            this.label3.Location = new System.Drawing.Point(28, 151);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 13);
+            this.label3.Size = new System.Drawing.Size(73, 16);
             this.label3.TabIndex = 4;
             this.label3.Text = "Dirección";
             // 
             // Txtingresar_Cliente_telefono
             // 
-            this.Txtingresar_Cliente_telefono.Location = new System.Drawing.Point(123, 176);
+            this.Txtingresar_Cliente_telefono.Location = new System.Drawing.Point(164, 217);
+            this.Txtingresar_Cliente_telefono.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Txtingresar_Cliente_telefono.MaxLength = 10;
             this.Txtingresar_Cliente_telefono.Name = "Txtingresar_Cliente_telefono";
             this.Txtingresar_Cliente_telefono.ShortcutsEnabled = false;
-            this.Txtingresar_Cliente_telefono.Size = new System.Drawing.Size(100, 19);
+            this.Txtingresar_Cliente_telefono.Size = new System.Drawing.Size(132, 22);
             this.Txtingresar_Cliente_telefono.TabIndex = 10;
             this.Txtingresar_Cliente_telefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txtingresar_Cliente_telefono_KeyPress);
             // 
@@ -188,9 +196,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(21, 76);
+            this.label2.Location = new System.Drawing.Point(28, 94);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 13);
+            this.label2.Size = new System.Drawing.Size(62, 16);
             this.label2.TabIndex = 3;
             this.label2.Text = "Nombre";
             // 
@@ -198,18 +207,20 @@
             // 
             this.Documento.AutoSize = true;
             this.Documento.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Documento.Location = new System.Drawing.Point(21, 24);
+            this.Documento.Location = new System.Drawing.Point(28, 30);
+            this.Documento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Documento.Name = "Documento";
-            this.Documento.Size = new System.Drawing.Size(71, 13);
+            this.Documento.Size = new System.Drawing.Size(85, 16);
             this.Documento.TabIndex = 1;
             this.Documento.Text = "Documento";
             // 
             // Btningresa_Cliente_guardar
             // 
             this.Btningresa_Cliente_guardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btningresa_Cliente_guardar.Location = new System.Drawing.Point(296, 89);
+            this.Btningresa_Cliente_guardar.Location = new System.Drawing.Point(395, 110);
+            this.Btningresa_Cliente_guardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Btningresa_Cliente_guardar.Name = "Btningresa_Cliente_guardar";
-            this.Btningresa_Cliente_guardar.Size = new System.Drawing.Size(75, 23);
+            this.Btningresa_Cliente_guardar.Size = new System.Drawing.Size(100, 28);
             this.Btningresa_Cliente_guardar.TabIndex = 7;
             this.Btningresa_Cliente_guardar.Text = "Guardar";
             this.Btningresa_Cliente_guardar.UseVisualStyleBackColor = true;
@@ -217,28 +228,31 @@
             // 
             // Txtingresar_Cliente_direccion
             // 
-            this.Txtingresar_Cliente_direccion.Location = new System.Drawing.Point(123, 119);
+            this.Txtingresar_Cliente_direccion.Location = new System.Drawing.Point(164, 146);
+            this.Txtingresar_Cliente_direccion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Txtingresar_Cliente_direccion.Name = "Txtingresar_Cliente_direccion";
             this.Txtingresar_Cliente_direccion.ShortcutsEnabled = false;
-            this.Txtingresar_Cliente_direccion.Size = new System.Drawing.Size(100, 19);
+            this.Txtingresar_Cliente_direccion.Size = new System.Drawing.Size(132, 22);
             this.Txtingresar_Cliente_direccion.TabIndex = 9;
             // 
             // Txtingresar_Cliente_documento
             // 
-            this.Txtingresar_Cliente_documento.Location = new System.Drawing.Point(123, 20);
+            this.Txtingresar_Cliente_documento.Location = new System.Drawing.Point(164, 25);
+            this.Txtingresar_Cliente_documento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Txtingresar_Cliente_documento.MaxLength = 10;
             this.Txtingresar_Cliente_documento.Name = "Txtingresar_Cliente_documento";
             this.Txtingresar_Cliente_documento.ShortcutsEnabled = false;
-            this.Txtingresar_Cliente_documento.Size = new System.Drawing.Size(100, 19);
+            this.Txtingresar_Cliente_documento.Size = new System.Drawing.Size(132, 22);
             this.Txtingresar_Cliente_documento.TabIndex = 2;
             this.Txtingresar_Cliente_documento.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txtingresar_Cliente_documento_KeyPress);
             // 
             // Btningresar_Cliente_limpiar
             // 
             this.Btningresar_Cliente_limpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btningresar_Cliente_limpiar.Location = new System.Drawing.Point(296, 145);
+            this.Btningresar_Cliente_limpiar.Location = new System.Drawing.Point(395, 178);
+            this.Btningresar_Cliente_limpiar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Btningresar_Cliente_limpiar.Name = "Btningresar_Cliente_limpiar";
-            this.Btningresar_Cliente_limpiar.Size = new System.Drawing.Size(75, 23);
+            this.Btningresar_Cliente_limpiar.Size = new System.Drawing.Size(100, 28);
             this.Btningresar_Cliente_limpiar.TabIndex = 0;
             this.Btningresar_Cliente_limpiar.Text = "Limpiar";
             this.Btningresar_Cliente_limpiar.UseVisualStyleBackColor = true;
@@ -246,22 +260,25 @@
             // 
             // Txtingresar_cliente_nombre
             // 
-            this.Txtingresar_cliente_nombre.Location = new System.Drawing.Point(123, 73);
+            this.Txtingresar_cliente_nombre.Location = new System.Drawing.Point(164, 90);
+            this.Txtingresar_cliente_nombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Txtingresar_cliente_nombre.Name = "Txtingresar_cliente_nombre";
             this.Txtingresar_cliente_nombre.ShortcutsEnabled = false;
-            this.Txtingresar_cliente_nombre.Size = new System.Drawing.Size(100, 19);
+            this.Txtingresar_cliente_nombre.Size = new System.Drawing.Size(132, 22);
             this.Txtingresar_cliente_nombre.TabIndex = 8;
             this.Txtingresar_cliente_nombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txtingresar_cliente_nombre_KeyPress);
             // 
             // TpgconsultarCliente
             // 
+            this.TpgconsultarCliente.Controls.Add(this.BtnCerrar);
             this.TpgconsultarCliente.Controls.Add(this.groupBox2);
             this.TpgconsultarCliente.Controls.Add(this.Dgwconsultarclientes);
             this.TpgconsultarCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TpgconsultarCliente.Location = new System.Drawing.Point(4, 22);
+            this.TpgconsultarCliente.Location = new System.Drawing.Point(4, 25);
+            this.TpgconsultarCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TpgconsultarCliente.Name = "TpgconsultarCliente";
-            this.TpgconsultarCliente.Padding = new System.Windows.Forms.Padding(3);
-            this.TpgconsultarCliente.Size = new System.Drawing.Size(438, 353);
+            this.TpgconsultarCliente.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TpgconsultarCliente.Size = new System.Drawing.Size(587, 437);
             this.TpgconsultarCliente.TabIndex = 1;
             this.TpgconsultarCliente.Text = "Consultar Cliente";
             this.TpgconsultarCliente.UseVisualStyleBackColor = true;
@@ -272,20 +289,21 @@
             this.groupBox2.Controls.Add(this.Btn_consultar_Cliente_consultar);
             this.groupBox2.Controls.Add(this.Cbxconsultar_Cliente_cliente);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Location = new System.Drawing.Point(34, 14);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox2.Location = new System.Drawing.Point(45, 17);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(370, 125);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox2.Size = new System.Drawing.Size(493, 154);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             // 
             // Btnconsultar_Cliente_mostrarvendedor
             // 
             this.Btnconsultar_Cliente_mostrarvendedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btnconsultar_Cliente_mostrarvendedor.Location = new System.Drawing.Point(230, 84);
+            this.Btnconsultar_Cliente_mostrarvendedor.Location = new System.Drawing.Point(307, 103);
+            this.Btnconsultar_Cliente_mostrarvendedor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Btnconsultar_Cliente_mostrarvendedor.Name = "Btnconsultar_Cliente_mostrarvendedor";
-            this.Btnconsultar_Cliente_mostrarvendedor.Size = new System.Drawing.Size(75, 23);
+            this.Btnconsultar_Cliente_mostrarvendedor.Size = new System.Drawing.Size(100, 28);
             this.Btnconsultar_Cliente_mostrarvendedor.TabIndex = 4;
             this.Btnconsultar_Cliente_mostrarvendedor.Text = "Mostrar todo";
             this.Btnconsultar_Cliente_mostrarvendedor.UseVisualStyleBackColor = true;
@@ -294,9 +312,10 @@
             // Btn_consultar_Cliente_consultar
             // 
             this.Btn_consultar_Cliente_consultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_consultar_Cliente_consultar.Location = new System.Drawing.Point(85, 84);
+            this.Btn_consultar_Cliente_consultar.Location = new System.Drawing.Point(113, 103);
+            this.Btn_consultar_Cliente_consultar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Btn_consultar_Cliente_consultar.Name = "Btn_consultar_Cliente_consultar";
-            this.Btn_consultar_Cliente_consultar.Size = new System.Drawing.Size(75, 23);
+            this.Btn_consultar_Cliente_consultar.Size = new System.Drawing.Size(100, 28);
             this.Btn_consultar_Cliente_consultar.TabIndex = 0;
             this.Btn_consultar_Cliente_consultar.Text = "Consultar";
             this.Btn_consultar_Cliente_consultar.UseVisualStyleBackColor = true;
@@ -306,18 +325,20 @@
             // 
             this.Cbxconsultar_Cliente_cliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Cbxconsultar_Cliente_cliente.FormattingEnabled = true;
-            this.Cbxconsultar_Cliente_cliente.Location = new System.Drawing.Point(148, 28);
+            this.Cbxconsultar_Cliente_cliente.Location = new System.Drawing.Point(197, 34);
+            this.Cbxconsultar_Cliente_cliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Cbxconsultar_Cliente_cliente.Name = "Cbxconsultar_Cliente_cliente";
-            this.Cbxconsultar_Cliente_cliente.Size = new System.Drawing.Size(121, 21);
+            this.Cbxconsultar_Cliente_cliente.Size = new System.Drawing.Size(160, 24);
             this.Cbxconsultar_Cliente_cliente.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(52, 36);
+            this.label1.Location = new System.Drawing.Point(69, 44);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 13);
+            this.label1.Size = new System.Drawing.Size(63, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "Clientes";
             // 
@@ -327,21 +348,25 @@
             this.Dgwconsultarclientes.AllowUserToResizeColumns = false;
             this.Dgwconsultarclientes.AllowUserToResizeRows = false;
             this.Dgwconsultarclientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.Dgwconsultarclientes.BackgroundColor = System.Drawing.Color.White;
             this.Dgwconsultarclientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Dgwconsultarclientes.Location = new System.Drawing.Point(34, 158);
+            this.Dgwconsultarclientes.Location = new System.Drawing.Point(45, 194);
+            this.Dgwconsultarclientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Dgwconsultarclientes.Name = "Dgwconsultarclientes";
             this.Dgwconsultarclientes.ReadOnly = true;
             this.Dgwconsultarclientes.RowHeadersWidth = 51;
-            this.Dgwconsultarclientes.Size = new System.Drawing.Size(370, 150);
+            this.Dgwconsultarclientes.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.Dgwconsultarclientes.Size = new System.Drawing.Size(493, 185);
             this.Dgwconsultarclientes.TabIndex = 2;
             // 
             // TpgmodificarCliente
             // 
             this.TpgmodificarCliente.Controls.Add(this.groupBox3);
             this.TpgmodificarCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TpgmodificarCliente.Location = new System.Drawing.Point(4, 22);
+            this.TpgmodificarCliente.Location = new System.Drawing.Point(4, 25);
+            this.TpgmodificarCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TpgmodificarCliente.Name = "TpgmodificarCliente";
-            this.TpgmodificarCliente.Size = new System.Drawing.Size(438, 353);
+            this.TpgmodificarCliente.Size = new System.Drawing.Size(587, 437);
             this.TpgmodificarCliente.TabIndex = 2;
             this.TpgmodificarCliente.Text = "Modificar cliente";
             this.TpgmodificarCliente.UseVisualStyleBackColor = true;
@@ -362,28 +387,30 @@
             this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.label8);
-            this.groupBox3.Location = new System.Drawing.Point(77, 19);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox3.Location = new System.Drawing.Point(103, 23);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox3.Size = new System.Drawing.Size(288, 318);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox3.Size = new System.Drawing.Size(384, 391);
             this.groupBox3.TabIndex = 37;
             this.groupBox3.TabStop = false;
             // 
             // Txtmodificar_Cliente_nombre
             // 
-            this.Txtmodificar_Cliente_nombre.Location = new System.Drawing.Point(140, 96);
+            this.Txtmodificar_Cliente_nombre.Location = new System.Drawing.Point(187, 118);
+            this.Txtmodificar_Cliente_nombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Txtmodificar_Cliente_nombre.Name = "Txtmodificar_Cliente_nombre";
             this.Txtmodificar_Cliente_nombre.ShortcutsEnabled = false;
-            this.Txtmodificar_Cliente_nombre.Size = new System.Drawing.Size(100, 19);
+            this.Txtmodificar_Cliente_nombre.Size = new System.Drawing.Size(132, 22);
             this.Txtmodificar_Cliente_nombre.TabIndex = 14;
             // 
             // Btnmodificar_Cliente_guardar
             // 
             this.Btnmodificar_Cliente_guardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btnmodificar_Cliente_guardar.Location = new System.Drawing.Point(158, 277);
+            this.Btnmodificar_Cliente_guardar.Location = new System.Drawing.Point(211, 341);
+            this.Btnmodificar_Cliente_guardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Btnmodificar_Cliente_guardar.Name = "Btnmodificar_Cliente_guardar";
-            this.Btnmodificar_Cliente_guardar.Size = new System.Drawing.Size(75, 23);
+            this.Btnmodificar_Cliente_guardar.Size = new System.Drawing.Size(100, 28);
             this.Btnmodificar_Cliente_guardar.TabIndex = 8;
             this.Btnmodificar_Cliente_guardar.Text = "Guardar Cambios";
             this.Btnmodificar_Cliente_guardar.UseVisualStyleBackColor = true;
@@ -393,18 +420,20 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(26, 101);
+            this.label12.Location = new System.Drawing.Point(35, 124);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(50, 13);
+            this.label12.Size = new System.Drawing.Size(62, 16);
             this.label12.TabIndex = 13;
             this.label12.Text = "Nombre";
             // 
             // Btnmodificar_Cliente_consultar
             // 
             this.Btnmodificar_Cliente_consultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btnmodificar_Cliente_consultar.Location = new System.Drawing.Point(158, 57);
+            this.Btnmodificar_Cliente_consultar.Location = new System.Drawing.Point(211, 70);
+            this.Btnmodificar_Cliente_consultar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Btnmodificar_Cliente_consultar.Name = "Btnmodificar_Cliente_consultar";
-            this.Btnmodificar_Cliente_consultar.Size = new System.Drawing.Size(75, 23);
+            this.Btnmodificar_Cliente_consultar.Size = new System.Drawing.Size(100, 28);
             this.Btnmodificar_Cliente_consultar.TabIndex = 0;
             this.Btnmodificar_Cliente_consultar.Text = "Consultar";
             this.Btnmodificar_Cliente_consultar.UseVisualStyleBackColor = true;
@@ -412,64 +441,71 @@
             // 
             // Txtmodificar_Cliente_correo
             // 
-            this.Txtmodificar_Cliente_correo.Location = new System.Drawing.Point(140, 244);
+            this.Txtmodificar_Cliente_correo.Location = new System.Drawing.Point(187, 300);
+            this.Txtmodificar_Cliente_correo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Txtmodificar_Cliente_correo.Name = "Txtmodificar_Cliente_correo";
             this.Txtmodificar_Cliente_correo.ShortcutsEnabled = false;
-            this.Txtmodificar_Cliente_correo.Size = new System.Drawing.Size(101, 19);
+            this.Txtmodificar_Cliente_correo.Size = new System.Drawing.Size(133, 22);
             this.Txtmodificar_Cliente_correo.TabIndex = 12;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(26, 23);
+            this.label5.Location = new System.Drawing.Point(35, 28);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 13);
+            this.label5.Size = new System.Drawing.Size(63, 16);
             this.label5.TabIndex = 1;
             this.label5.Text = "Clientes";
             // 
             // Txtmodificar_Cliente_telefono
             // 
-            this.Txtmodificar_Cliente_telefono.Location = new System.Drawing.Point(140, 208);
+            this.Txtmodificar_Cliente_telefono.Location = new System.Drawing.Point(187, 256);
+            this.Txtmodificar_Cliente_telefono.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Txtmodificar_Cliente_telefono.MaxLength = 10;
             this.Txtmodificar_Cliente_telefono.Name = "Txtmodificar_Cliente_telefono";
             this.Txtmodificar_Cliente_telefono.ShortcutsEnabled = false;
-            this.Txtmodificar_Cliente_telefono.Size = new System.Drawing.Size(101, 19);
+            this.Txtmodificar_Cliente_telefono.Size = new System.Drawing.Size(133, 22);
             this.Txtmodificar_Cliente_telefono.TabIndex = 10;
             // 
             // Txtmodificar_Cliente_Documento
             // 
-            this.Txtmodificar_Cliente_Documento.Location = new System.Drawing.Point(140, 130);
+            this.Txtmodificar_Cliente_Documento.Location = new System.Drawing.Point(187, 160);
+            this.Txtmodificar_Cliente_Documento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Txtmodificar_Cliente_Documento.Name = "Txtmodificar_Cliente_Documento";
             this.Txtmodificar_Cliente_Documento.ReadOnly = true;
             this.Txtmodificar_Cliente_Documento.ShortcutsEnabled = false;
-            this.Txtmodificar_Cliente_Documento.Size = new System.Drawing.Size(100, 19);
+            this.Txtmodificar_Cliente_Documento.Size = new System.Drawing.Size(132, 22);
             this.Txtmodificar_Cliente_Documento.TabIndex = 2;
             // 
             // Txtmodificar_Cliente_Direccion
             // 
-            this.Txtmodificar_Cliente_Direccion.Location = new System.Drawing.Point(140, 171);
+            this.Txtmodificar_Cliente_Direccion.Location = new System.Drawing.Point(187, 210);
+            this.Txtmodificar_Cliente_Direccion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Txtmodificar_Cliente_Direccion.Name = "Txtmodificar_Cliente_Direccion";
             this.Txtmodificar_Cliente_Direccion.ShortcutsEnabled = false;
-            this.Txtmodificar_Cliente_Direccion.Size = new System.Drawing.Size(100, 19);
+            this.Txtmodificar_Cliente_Direccion.Size = new System.Drawing.Size(132, 22);
             this.Txtmodificar_Cliente_Direccion.TabIndex = 9;
             // 
             // Cbomodificar_clientes_nombre
             // 
             this.Cbomodificar_clientes_nombre.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Cbomodificar_clientes_nombre.FormattingEnabled = true;
-            this.Cbomodificar_clientes_nombre.Location = new System.Drawing.Point(140, 23);
+            this.Cbomodificar_clientes_nombre.Location = new System.Drawing.Point(187, 28);
+            this.Cbomodificar_clientes_nombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Cbomodificar_clientes_nombre.Name = "Cbomodificar_clientes_nombre";
-            this.Cbomodificar_clientes_nombre.Size = new System.Drawing.Size(121, 21);
+            this.Cbomodificar_clientes_nombre.Size = new System.Drawing.Size(160, 24);
             this.Cbomodificar_clientes_nombre.TabIndex = 3;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(26, 135);
+            this.label6.Location = new System.Drawing.Point(35, 166);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(71, 13);
+            this.label6.Size = new System.Drawing.Size(85, 16);
             this.label6.TabIndex = 4;
             this.label6.Text = "Documento";
             // 
@@ -477,9 +513,10 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(26, 249);
+            this.label9.Location = new System.Drawing.Point(35, 306);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(44, 13);
+            this.label9.Size = new System.Drawing.Size(54, 16);
             this.label9.TabIndex = 7;
             this.label9.Text = "Correo";
             // 
@@ -487,9 +524,10 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(26, 174);
+            this.label7.Location = new System.Drawing.Point(35, 214);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(61, 13);
+            this.label7.Size = new System.Drawing.Size(73, 16);
             this.label7.TabIndex = 5;
             this.label7.Text = "Dirección";
             // 
@@ -497,9 +535,10 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(26, 213);
+            this.label8.Location = new System.Drawing.Point(35, 262);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(57, 13);
+            this.label8.Size = new System.Drawing.Size(69, 16);
             this.label8.TabIndex = 6;
             this.label8.Text = "Teléfono";
             // 
@@ -507,9 +546,10 @@
             // 
             this.TpgeliminarCliente.Controls.Add(this.groupBox4);
             this.TpgeliminarCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TpgeliminarCliente.Location = new System.Drawing.Point(4, 22);
+            this.TpgeliminarCliente.Location = new System.Drawing.Point(4, 25);
+            this.TpgeliminarCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TpgeliminarCliente.Name = "TpgeliminarCliente";
-            this.TpgeliminarCliente.Size = new System.Drawing.Size(438, 353);
+            this.TpgeliminarCliente.Size = new System.Drawing.Size(587, 437);
             this.TpgeliminarCliente.TabIndex = 3;
             this.TpgeliminarCliente.Text = "Eliminar Cliente";
             this.TpgeliminarCliente.UseVisualStyleBackColor = true;
@@ -519,20 +559,21 @@
             this.groupBox4.Controls.Add(this.Btneliminar_Cliente);
             this.groupBox4.Controls.Add(this.label11);
             this.groupBox4.Controls.Add(this.Cboeliminar_Cliente);
-            this.groupBox4.Location = new System.Drawing.Point(63, 56);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox4.Location = new System.Drawing.Point(84, 69);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox4.Size = new System.Drawing.Size(312, 227);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox4.Size = new System.Drawing.Size(416, 279);
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             // 
             // Btneliminar_Cliente
             // 
             this.Btneliminar_Cliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btneliminar_Cliente.Location = new System.Drawing.Point(111, 125);
+            this.Btneliminar_Cliente.Location = new System.Drawing.Point(148, 154);
+            this.Btneliminar_Cliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Btneliminar_Cliente.Name = "Btneliminar_Cliente";
-            this.Btneliminar_Cliente.Size = new System.Drawing.Size(75, 23);
+            this.Btneliminar_Cliente.Size = new System.Drawing.Size(100, 28);
             this.Btneliminar_Cliente.TabIndex = 0;
             this.Btneliminar_Cliente.Text = "Eliminar";
             this.Btneliminar_Cliente.UseVisualStyleBackColor = true;
@@ -542,9 +583,10 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(59, 69);
+            this.label11.Location = new System.Drawing.Point(79, 85);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(52, 13);
+            this.label11.Size = new System.Drawing.Size(63, 16);
             this.label11.TabIndex = 2;
             this.label11.Text = "Clientes";
             // 
@@ -552,28 +594,29 @@
             // 
             this.Cboeliminar_Cliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Cboeliminar_Cliente.FormattingEnabled = true;
-            this.Cboeliminar_Cliente.Location = new System.Drawing.Point(139, 69);
+            this.Cboeliminar_Cliente.Location = new System.Drawing.Point(185, 85);
+            this.Cboeliminar_Cliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Cboeliminar_Cliente.Name = "Cboeliminar_Cliente";
-            this.Cboeliminar_Cliente.Size = new System.Drawing.Size(121, 21);
+            this.Cboeliminar_Cliente.Size = new System.Drawing.Size(160, 24);
             this.Cboeliminar_Cliente.TabIndex = 1;
             // 
             // dataGridView11
             // 
             this.dataGridView11.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView11.Location = new System.Drawing.Point(668, 21);
+            this.dataGridView11.Location = new System.Drawing.Point(891, 26);
+            this.dataGridView11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView11.Name = "dataGridView11";
             this.dataGridView11.RowHeadersWidth = 51;
-            this.dataGridView11.Size = new System.Drawing.Size(117, 74);
+            this.dataGridView11.Size = new System.Drawing.Size(156, 91);
             this.dataGridView11.TabIndex = 10;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(41, 21);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Location = new System.Drawing.Point(55, 26);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(74, 20);
+            this.label13.Size = new System.Drawing.Size(91, 25);
             this.label13.TabIndex = 35;
             this.label13.Text = "Clientes";
             // 
@@ -581,24 +624,36 @@
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(668, 125);
+            this.pictureBox1.Location = new System.Drawing.Point(891, 154);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(253, 208);
+            this.pictureBox1.Size = new System.Drawing.Size(336, 255);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 36;
             this.pictureBox1.TabStop = false;
             // 
+            // BtnCerrar
+            // 
+            this.BtnCerrar.Location = new System.Drawing.Point(463, 396);
+            this.BtnCerrar.Name = "BtnCerrar";
+            this.BtnCerrar.Size = new System.Drawing.Size(75, 23);
+            this.BtnCerrar.TabIndex = 37;
+            this.BtnCerrar.Text = "Cerrar";
+            this.BtnCerrar.UseVisualStyleBackColor = true;
+            this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
+            // 
             // Clientes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1160, 618);
+            this.ClientSize = new System.Drawing.Size(1547, 761);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.dataGridView11);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Clientes";
             this.Text = "V";
             this.Load += new System.EventHandler(this.Clientes_Load);
@@ -671,5 +726,6 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button BtnCerrar;
     }
 }

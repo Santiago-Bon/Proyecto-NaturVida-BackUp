@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inventario));
             this.Cbo_Inventario_Producto = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -40,6 +42,7 @@
             this.BtnExportarPdf = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.BtnCerrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Inventario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -51,27 +54,30 @@
             this.Cbo_Inventario_Producto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Cbo_Inventario_Producto.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Cbo_Inventario_Producto.FormattingEnabled = true;
-            this.Cbo_Inventario_Producto.Location = new System.Drawing.Point(97, 23);
+            this.Cbo_Inventario_Producto.Location = new System.Drawing.Point(129, 28);
+            this.Cbo_Inventario_Producto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Cbo_Inventario_Producto.Name = "Cbo_Inventario_Producto";
-            this.Cbo_Inventario_Producto.Size = new System.Drawing.Size(233, 21);
+            this.Cbo_Inventario_Producto.Size = new System.Drawing.Size(309, 24);
             this.Cbo_Inventario_Producto.TabIndex = 10;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 26);
+            this.label1.Location = new System.Drawing.Point(16, 32);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 13);
+            this.label1.Size = new System.Drawing.Size(69, 16);
             this.label1.TabIndex = 9;
             this.label1.Text = "Producto";
             // 
             // Btn_MInventario_Mostrar_Todo
             // 
             this.Btn_MInventario_Mostrar_Todo.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_MInventario_Mostrar_Todo.Location = new System.Drawing.Point(189, 84);
+            this.Btn_MInventario_Mostrar_Todo.Location = new System.Drawing.Point(252, 103);
+            this.Btn_MInventario_Mostrar_Todo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Btn_MInventario_Mostrar_Todo.Name = "Btn_MInventario_Mostrar_Todo";
-            this.Btn_MInventario_Mostrar_Todo.Size = new System.Drawing.Size(75, 23);
+            this.Btn_MInventario_Mostrar_Todo.Size = new System.Drawing.Size(100, 28);
             this.Btn_MInventario_Mostrar_Todo.TabIndex = 8;
             this.Btn_MInventario_Mostrar_Todo.Text = "Mostrar Todo";
             this.Btn_MInventario_Mostrar_Todo.UseVisualStyleBackColor = true;
@@ -80,9 +86,10 @@
             // Btn_Inventario_Consultar
             // 
             this.Btn_Inventario_Consultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Inventario_Consultar.Location = new System.Drawing.Point(83, 84);
+            this.Btn_Inventario_Consultar.Location = new System.Drawing.Point(111, 103);
+            this.Btn_Inventario_Consultar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Btn_Inventario_Consultar.Name = "Btn_Inventario_Consultar";
-            this.Btn_Inventario_Consultar.Size = new System.Drawing.Size(75, 23);
+            this.Btn_Inventario_Consultar.Size = new System.Drawing.Size(100, 28);
             this.Btn_Inventario_Consultar.TabIndex = 7;
             this.Btn_Inventario_Consultar.Text = "Consultar";
             this.Btn_Inventario_Consultar.UseVisualStyleBackColor = true;
@@ -94,22 +101,40 @@
             this.Dgv_Inventario.AllowUserToResizeColumns = false;
             this.Dgv_Inventario.AllowUserToResizeRows = false;
             this.Dgv_Inventario.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.Dgv_Inventario.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Dgv_Inventario.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.Dgv_Inventario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Dgv_Inventario.Location = new System.Drawing.Point(211, 201);
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Dgv_Inventario.DefaultCellStyle = dataGridViewCellStyle4;
+            this.Dgv_Inventario.Location = new System.Drawing.Point(281, 247);
+            this.Dgv_Inventario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Dgv_Inventario.Name = "Dgv_Inventario";
             this.Dgv_Inventario.ReadOnly = true;
             this.Dgv_Inventario.RowHeadersWidth = 51;
-            this.Dgv_Inventario.Size = new System.Drawing.Size(467, 150);
+            this.Dgv_Inventario.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.Dgv_Inventario.Size = new System.Drawing.Size(623, 185);
             this.Dgv_Inventario.TabIndex = 6;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(411, 22);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(548, 27);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(89, 20);
+            this.label6.Size = new System.Drawing.Size(107, 25);
             this.label6.TabIndex = 35;
             this.label6.Text = "Inventario";
             // 
@@ -117,9 +142,10 @@
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(645, 22);
+            this.pictureBox1.Location = new System.Drawing.Point(860, 27);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(163, 103);
+            this.pictureBox1.Size = new System.Drawing.Size(216, 126);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 36;
             this.pictureBox1.TabStop = false;
@@ -127,9 +153,10 @@
             // BtnExportarExcel
             // 
             this.BtnExportarExcel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnExportarExcel.Location = new System.Drawing.Point(23, 18);
+            this.BtnExportarExcel.Location = new System.Drawing.Point(31, 22);
+            this.BtnExportarExcel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnExportarExcel.Name = "BtnExportarExcel";
-            this.BtnExportarExcel.Size = new System.Drawing.Size(135, 23);
+            this.BtnExportarExcel.Size = new System.Drawing.Size(180, 28);
             this.BtnExportarExcel.TabIndex = 37;
             this.BtnExportarExcel.Text = "Exportar a Excel";
             this.BtnExportarExcel.UseVisualStyleBackColor = true;
@@ -138,9 +165,10 @@
             // BtnExportarPdf
             // 
             this.BtnExportarPdf.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnExportarPdf.Location = new System.Drawing.Point(189, 18);
+            this.BtnExportarPdf.Location = new System.Drawing.Point(252, 22);
+            this.BtnExportarPdf.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnExportarPdf.Name = "BtnExportarPdf";
-            this.BtnExportarPdf.Size = new System.Drawing.Size(126, 23);
+            this.BtnExportarPdf.Size = new System.Drawing.Size(168, 28);
             this.BtnExportarPdf.TabIndex = 38;
             this.BtnExportarPdf.Text = "Exportar a PDF";
             this.BtnExportarPdf.UseVisualStyleBackColor = true;
@@ -153,11 +181,11 @@
             this.groupBox1.Controls.Add(this.Btn_Inventario_Consultar);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.Cbo_Inventario_Producto);
-            this.groupBox1.Location = new System.Drawing.Point(280, 54);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Location = new System.Drawing.Point(373, 66);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(336, 130);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(448, 160);
             this.groupBox1.TabIndex = 39;
             this.groupBox1.TabStop = false;
             // 
@@ -166,27 +194,39 @@
             this.groupBox2.BackColor = System.Drawing.Color.White;
             this.groupBox2.Controls.Add(this.BtnExportarPdf);
             this.groupBox2.Controls.Add(this.BtnExportarExcel);
-            this.groupBox2.Location = new System.Drawing.Point(280, 361);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox2.Location = new System.Drawing.Point(373, 444);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(336, 49);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox2.Size = new System.Drawing.Size(448, 60);
             this.groupBox2.TabIndex = 40;
             this.groupBox2.TabStop = false;
             // 
+            // BtnCerrar
+            // 
+            this.BtnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCerrar.Location = new System.Drawing.Point(904, 466);
+            this.BtnCerrar.Name = "BtnCerrar";
+            this.BtnCerrar.Size = new System.Drawing.Size(88, 28);
+            this.BtnCerrar.TabIndex = 42;
+            this.BtnCerrar.Text = "Cerrar";
+            this.BtnCerrar.UseVisualStyleBackColor = true;
+            this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
+            // 
             // Inventario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(901, 443);
+            this.ClientSize = new System.Drawing.Size(1201, 545);
+            this.Controls.Add(this.BtnCerrar);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.Dgv_Inventario);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Inventario";
             this.Text = "Inventario";
             this.Load += new System.EventHandler(this.Inventario_Load);
@@ -213,5 +253,6 @@
         private System.Windows.Forms.Button BtnExportarPdf;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button BtnCerrar;
     }
 }

@@ -10,7 +10,7 @@ namespace CapaDatos
 {
     public class CD_Conexion
     {
-        private SqlConnection conexion = new SqlConnection("Server=BUCDFPCSEFSD025\\SQLEXPRESS1;Database=NaturVida;Integrated Security=True");
+        private SqlConnection conexion = new SqlConnection("Server=LAPTOP-7CT9LAKR\\SQLEXPRESS;Database=NaturVida;Integrated Security=True");
         //private SqlConnection conexion = new SqlConnection("Data Source=SQL5110.site4now.net;Initial Catalog=db_a9823f_naturvida;User Id=db_a9823f_naturvida_admin;Password=NaturVida123");
 
 

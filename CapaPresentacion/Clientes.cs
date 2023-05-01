@@ -289,6 +289,16 @@ namespace CapaPresentacion
         }
 
 
+        //Cerrar
+
+
+        private void BtnCerrar_Click(object sender, EventArgs e) //Vacia el origen de los datos del datagridview
+        {
+            DataTable tabla = new DataTable();
+            Dgwconsultarclientes.DataSource = tabla;
+        }
+
+
         //Validaciones
 
 
