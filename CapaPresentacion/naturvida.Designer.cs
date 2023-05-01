@@ -48,7 +48,7 @@
             // panel1
             // 
             this.panel1.Location = new System.Drawing.Point(0, 33);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1304, 532);
             this.panel1.TabIndex = 0;
@@ -72,7 +72,8 @@
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
             this.menuStrip1.Size = new System.Drawing.Size(1304, 28);
             this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";            // 
+            this.menuStrip1.Text = "menuStrip1";
+            // 
             // inicioToolStripMenuItem
             // 
             this.inicioToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -150,7 +151,7 @@
             // 
             this.generarBakUpToolStripMenuItem.Name = "generarBakUpToolStripMenuItem";
             this.generarBakUpToolStripMenuItem.Size = new System.Drawing.Size(263, 26);
-            this.generarBakUpToolStripMenuItem.Text = "Generar BakUp";
+            this.generarBakUpToolStripMenuItem.Text = "Generar BackUp";
             this.generarBakUpToolStripMenuItem.Click += new System.EventHandler(this.generarBakUpToolStripMenuItem_Click);
             // 
             // restaurarBaseDeDatosToolStripMenuItem
@@ -177,7 +178,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "naturvida";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NaturVida";
